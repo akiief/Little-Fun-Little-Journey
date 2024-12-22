@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minus</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('./photo/addition.png');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5rem;
+            color: #ff7eb3;
+        }
+        h1 span {
+            color: #ff477e;
+            font-size: 3rem;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px;
+        }
+        .button {
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+            border: 3px solid #ff7eb3;
+            border-radius: 15px;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+        }
+        .drag-drop {
+            background-image: url('photo/dragdrop.png'); /* Replace with your image path */
+        }
+        .image-sequence {
+            background-image: url('photo/imagesequence.png'); /* Replace with your image path */
+        }
+        .arithmetic-quiz {
+            background-image: url('photo/arithmeticquiz.png'); /* Replace with your image path */
+        }
+        .flashcards {
+            background-image: url('photo/flashcards.png'); /* Replace with your image path */
+        }
+        .back-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: purple;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minus <span>-</span></h1>
+    <div class="grid-container">
+        <a href="drag&drop-minus.html" class="button drag-drop">Drag & Drop</a>
+        <a href="image-sequence-minus.html" class="button image-sequence">Image Sequence</a>
+        <a href="arithmetic-quiz-minus.html" class="button arithmetic-quiz">Arithmetic Quiz</a>
+        <a href="flashcard-minus.html" class="button flashcards">Flashcards</a>
+    </div>
+    <a href="homepage.html" class="back-button">Back</a>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Fun, Little Journey - Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('./photo/homepage.png');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .speech-bubble {
+            position: absolute;
+            top: 40%;
+            left: 48%;
+            background-color: white;
+            padding: 20px 30px;
+            border-radius: 25px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #0066cc;
+            text-align: center;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .speech-bubble:after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 30%;
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-top-color: white;
+        }
+        .buttons-container {
+            position: absolute;
+            right: 15%;
+            top: 50%;
+            transform: translateY(-50%);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .button {
+            width: 100px;
+            height: 100px;
+            background-color: white	;
+            color: #0066cc;
+            border: 2px #0066cc;
+            border-radius: 15px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .button:hover {
+            background-color: yellow;
+            transform: scale(1.1);
+        }
+        .back-button {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: white;
+            color: #0066cc;
+            border: none;
+            padding: 15px 25px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="speech-bubble">
+        Choose Which One
+    </div>
+    <div class="buttons-container">
+        <a href="addition.html" class="button">+</a>
+        <a href="minus.html" class="button">−</a>
+        <a href="division.html" class="button">÷</a>
+        <a href="multiplication.html" class="button">×</a>
+    </div>
+    <a href="index.html" class="back-button">Back</a>
+</body>
+</html>
